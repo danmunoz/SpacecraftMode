@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E16F2CF18F3A46200EADED3 /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E16F2CE18F3A46200EADED3 /* PebbleKit.framework */; };
+		6E16F2D118F3A46A00EADED3 /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E16F2D018F3A46A00EADED3 /* PebbleVendor.framework */; };
+		6E16F2D318F3A54700EADED3 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E16F2D218F3A54700EADED3 /* ExternalAccessory.framework */; };
+		6E16F2D518F3A55D00EADED3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E16F2D418F3A55D00EADED3 /* libz.dylib */; };
+		6E16F2D718F3A56400EADED3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E16F2D618F3A56400EADED3 /* CoreBluetooth.framework */; };
+		6E16F2D918F3A56C00EADED3 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E16F2D818F3A56C00EADED3 /* CoreMotion.framework */; };
+		6E16F2DB18F3A57200EADED3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E16F2DA18F3A57200EADED3 /* CFNetwork.framework */; };
+		6E16F2DD18F3A57A00EADED3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E16F2DC18F3A57A00EADED3 /* MessageUI.framework */; };
+		6E48FD5618F8DA78006D8838 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E48FD5518F8DA78006D8838 /* MenuViewController.m */; };
+		6E48FD5A18F8DB4B006D8838 /* SpaceTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E48FD5918F8DB4B006D8838 /* SpaceTabBarController.m */; };
+		6E48FDA318F8E690006D8838 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E48FDA218F8E690006D8838 /* MainStoryboard.storyboard */; };
+		6E48FDA618F8E8AE006D8838 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E48FDA518F8E8AE006D8838 /* StartViewController.m */; };
+		6E48FDA918F8F1BD006D8838 /* FlightInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E48FDA818F8F1BD006D8838 /* FlightInfoViewController.m */; };
+		6E48FDAD18F8F8BE006D8838 /* CameraTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E48FDAC18F8F8BE006D8838 /* CameraTabViewController.m */; };
+		6E48FDB018F8FD09006D8838 /* SpaceSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E48FDAF18F8FD09006D8838 /* SpaceSettingsViewController.m */; };
+		6E48FDB318F908CE006D8838 /* EarthStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E48FDB218F908CE006D8838 /* EarthStoryboard.storyboard */; };
+		6E48FDB618F98584006D8838 /* DataComparisonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E48FDB518F98584006D8838 /* DataComparisonViewController.m */; };
+		6E61CB7018F330CC00AE76E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E61CB6F18F330CC00AE76E4 /* Foundation.framework */; };
+		6E61CB7218F330CC00AE76E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E61CB7118F330CC00AE76E4 /* CoreGraphics.framework */; };
+		6E61CB7418F330CC00AE76E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E61CB7318F330CC00AE76E4 /* UIKit.framework */; };
+		6E61CB7A18F330CC00AE76E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E61CB7818F330CC00AE76E4 /* InfoPlist.strings */; };
+		6E61CB7C18F330CC00AE76E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E61CB7B18F330CC00AE76E4 /* main.m */; };
+		6E61CB8018F330CC00AE76E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E61CB7F18F330CC00AE76E4 /* AppDelegate.m */; };
+		6E61CB8318F330CC00AE76E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E61CB8118F330CC00AE76E4 /* Main.storyboard */; };
+		6E61CB8818F330CC00AE76E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E61CB8718F330CC00AE76E4 /* Images.xcassets */; };
+		6E61CB8F18F330CC00AE76E4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E61CB8E18F330CC00AE76E4 /* XCTest.framework */; };
+		6E61CB9018F330CC00AE76E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E61CB6F18F330CC00AE76E4 /* Foundation.framework */; };
+		6E61CB9118F330CC00AE76E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E61CB7318F330CC00AE76E4 /* UIKit.framework */; };
+		6E61CB9918F330CC00AE76E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E61CB9718F330CC00AE76E4 /* InfoPlist.strings */; };
+		6E61CB9B18F330CC00AE76E4 /* SpacecraftModeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E61CB9A18F330CC00AE76E4 /* SpacecraftModeTests.m */; };
+		6E92330E18F51A9B000A4AC8 /* AppearSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E92330D18F51A9B000A4AC8 /* AppearSegue.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E61CB9218F330CC00AE76E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E61CB6418F330CC00AE76E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E61CB6B18F330CC00AE76E4;
+			remoteInfo = SpacecraftMode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E16F2CE18F3A46200EADED3 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleKit.framework; sourceTree = "<group>"; };
+		6E16F2D018F3A46A00EADED3 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleVendor.framework; sourceTree = "<group>"; };
+		6E16F2D218F3A54700EADED3 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		6E16F2D418F3A55D00EADED3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6E16F2D618F3A56400EADED3 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		6E16F2D818F3A56C00EADED3 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		6E16F2DA18F3A57200EADED3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6E16F2DC18F3A57A00EADED3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6E48FD5418F8DA78006D8838 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		6E48FD5518F8DA78006D8838 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		6E48FD5818F8DB4B006D8838 /* SpaceTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceTabBarController.h; sourceTree = "<group>"; };
+		6E48FD5918F8DB4B006D8838 /* SpaceTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceTabBarController.m; sourceTree = "<group>"; };
+		6E48FDA218F8E690006D8838 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6E48FDA418F8E8AE006D8838 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		6E48FDA518F8E8AE006D8838 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		6E48FDA718F8F1BD006D8838 /* FlightInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightInfoViewController.h; sourceTree = "<group>"; };
+		6E48FDA818F8F1BD006D8838 /* FlightInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightInfoViewController.m; sourceTree = "<group>"; };
+		6E48FDAB18F8F8BE006D8838 /* CameraTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraTabViewController.h; sourceTree = "<group>"; };
+		6E48FDAC18F8F8BE006D8838 /* CameraTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraTabViewController.m; sourceTree = "<group>"; };
+		6E48FDAE18F8FD09006D8838 /* SpaceSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceSettingsViewController.h; sourceTree = "<group>"; };
+		6E48FDAF18F8FD09006D8838 /* SpaceSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceSettingsViewController.m; sourceTree = "<group>"; };
+		6E48FDB218F908CE006D8838 /* EarthStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EarthStoryboard.storyboard; sourceTree = "<group>"; };
+		6E48FDB418F98584006D8838 /* DataComparisonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataComparisonViewController.h; sourceTree = "<group>"; };
+		6E48FDB518F98584006D8838 /* DataComparisonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataComparisonViewController.m; sourceTree = "<group>"; };
+		6E61CB6C18F330CC00AE76E4 /* SpacecraftMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacecraftMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E61CB6F18F330CC00AE76E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6E61CB7118F330CC00AE76E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6E61CB7318F330CC00AE76E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E61CB7718F330CC00AE76E4 /* SpacecraftMode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpacecraftMode-Info.plist"; sourceTree = "<group>"; };
+		6E61CB7918F330CC00AE76E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E61CB7B18F330CC00AE76E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E61CB7D18F330CC00AE76E4 /* SpacecraftMode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpacecraftMode-Prefix.pch"; sourceTree = "<group>"; };
+		6E61CB7E18F330CC00AE76E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6E61CB7F18F330CC00AE76E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6E61CB8218F330CC00AE76E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E61CB8718F330CC00AE76E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6E61CB8D18F330CC00AE76E4 /* SpacecraftModeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpacecraftModeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E61CB8E18F330CC00AE76E4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6E61CB9618F330CC00AE76E4 /* SpacecraftModeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpacecraftModeTests-Info.plist"; sourceTree = "<group>"; };
+		6E61CB9818F330CC00AE76E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E61CB9A18F330CC00AE76E4 /* SpacecraftModeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpacecraftModeTests.m; sourceTree = "<group>"; };
+		6E92330C18F51A9B000A4AC8 /* AppearSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearSegue.h; sourceTree = "<group>"; };
+		6E92330D18F51A9B000A4AC8 /* AppearSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearSegue.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E61CB6918F330CC00AE76E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E16F2DD18F3A57A00EADED3 /* MessageUI.framework in Frameworks */,
+				6E16F2DB18F3A57200EADED3 /* CFNetwork.framework in Frameworks */,
+				6E16F2D918F3A56C00EADED3 /* CoreMotion.framework in Frameworks */,
+				6E16F2D718F3A56400EADED3 /* CoreBluetooth.framework in Frameworks */,
+				6E16F2D518F3A55D00EADED3 /* libz.dylib in Frameworks */,
+				6E16F2D318F3A54700EADED3 /* ExternalAccessory.framework in Frameworks */,
+				6E61CB7218F330CC00AE76E4 /* CoreGraphics.framework in Frameworks */,
+				6E16F2D118F3A46A00EADED3 /* PebbleVendor.framework in Frameworks */,
+				6E16F2CF18F3A46200EADED3 /* PebbleKit.framework in Frameworks */,
+				6E61CB7418F330CC00AE76E4 /* UIKit.framework in Frameworks */,
+				6E61CB7018F330CC00AE76E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E61CB8A18F330CC00AE76E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E61CB8F18F330CC00AE76E4 /* XCTest.framework in Frameworks */,
+				6E61CB9118F330CC00AE76E4 /* UIKit.framework in Frameworks */,
+				6E61CB9018F330CC00AE76E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E48FD5718F8DB23006D8838 /* Space */ = {
+			isa = PBXGroup;
+			children = (
+				6E61CB8118F330CC00AE76E4 /* Main.storyboard */,
+				6E48FD5818F8DB4B006D8838 /* SpaceTabBarController.h */,
+				6E48FD5918F8DB4B006D8838 /* SpaceTabBarController.m */,
+				6E48FDA718F8F1BD006D8838 /* FlightInfoViewController.h */,
+				6E48FDA818F8F1BD006D8838 /* FlightInfoViewController.m */,
+				6E48FDAE18F8FD09006D8838 /* SpaceSettingsViewController.h */,
+				6E48FDAF18F8FD09006D8838 /* SpaceSettingsViewController.m */,
+			);
+			name = Space;
+			sourceTree = "<group>";
+		};
+		6E48FD5B18F8E067006D8838 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				6E48FDA218F8E690006D8838 /* MainStoryboard.storyboard */,
+				6E48FDA418F8E8AE006D8838 /* StartViewController.h */,
+				6E48FDA518F8E8AE006D8838 /* StartViewController.m */,
+				6E48FD5418F8DA78006D8838 /* MenuViewController.h */,
+				6E48FD5518F8DA78006D8838 /* MenuViewController.m */,
+			);
+			name = Start;
+			sourceTree = "<group>";
+		};
+		6E48FDAA18F8F8B0006D8838 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				6E48FDAB18F8F8BE006D8838 /* CameraTabViewController.h */,
+				6E48FDAC18F8F8BE006D8838 /* CameraTabViewController.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		6E48FDB118F9017C006D8838 /* Earth */ = {
+			isa = PBXGroup;
+			children = (
+				6E48FDB218F908CE006D8838 /* EarthStoryboard.storyboard */,
+				6E48FDB418F98584006D8838 /* DataComparisonViewController.h */,
+				6E48FDB518F98584006D8838 /* DataComparisonViewController.m */,
+			);
+			name = Earth;
+			sourceTree = "<group>";
+		};
+		6E61CB6318F330CC00AE76E4 = {
+			isa = PBXGroup;
+			children = (
+				6E16F2D018F3A46A00EADED3 /* PebbleVendor.framework */,
+				6E16F2CE18F3A46200EADED3 /* PebbleKit.framework */,
+				6E61CB7518F330CC00AE76E4 /* SpacecraftMode */,
+				6E61CB9418F330CC00AE76E4 /* SpacecraftModeTests */,
+				6E61CB6E18F330CC00AE76E4 /* Frameworks */,
+				6E61CB6D18F330CC00AE76E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E61CB6D18F330CC00AE76E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E61CB6C18F330CC00AE76E4 /* SpacecraftMode.app */,
+				6E61CB8D18F330CC00AE76E4 /* SpacecraftModeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E61CB6E18F330CC00AE76E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E16F2DC18F3A57A00EADED3 /* MessageUI.framework */,
+				6E16F2DA18F3A57200EADED3 /* CFNetwork.framework */,
+				6E16F2D818F3A56C00EADED3 /* CoreMotion.framework */,
+				6E16F2D618F3A56400EADED3 /* CoreBluetooth.framework */,
+				6E16F2D418F3A55D00EADED3 /* libz.dylib */,
+				6E16F2D218F3A54700EADED3 /* ExternalAccessory.framework */,
+				6E61CB6F18F330CC00AE76E4 /* Foundation.framework */,
+				6E61CB7118F330CC00AE76E4 /* CoreGraphics.framework */,
+				6E61CB7318F330CC00AE76E4 /* UIKit.framework */,
+				6E61CB8E18F330CC00AE76E4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E61CB7518F330CC00AE76E4 /* SpacecraftMode */ = {
+			isa = PBXGroup;
+			children = (
+				6E48FDAA18F8F8B0006D8838 /* Camera */,
+				6E48FD5B18F8E067006D8838 /* Start */,
+				6E48FD5718F8DB23006D8838 /* Space */,
+				6E48FDB118F9017C006D8838 /* Earth */,
+				6E92330918F51A39000A4AC8 /* Segues */,
+				6E61CB7E18F330CC00AE76E4 /* AppDelegate.h */,
+				6E61CB7F18F330CC00AE76E4 /* AppDelegate.m */,
+				6E61CB8718F330CC00AE76E4 /* Images.xcassets */,
+				6E61CB7618F330CC00AE76E4 /* Supporting Files */,
+			);
+			path = SpacecraftMode;
+			sourceTree = "<group>";
+		};
+		6E61CB7618F330CC00AE76E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E61CB7718F330CC00AE76E4 /* SpacecraftMode-Info.plist */,
+				6E61CB7818F330CC00AE76E4 /* InfoPlist.strings */,
+				6E61CB7B18F330CC00AE76E4 /* main.m */,
+				6E61CB7D18F330CC00AE76E4 /* SpacecraftMode-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E61CB9418F330CC00AE76E4 /* SpacecraftModeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E61CB9A18F330CC00AE76E4 /* SpacecraftModeTests.m */,
+				6E61CB9518F330CC00AE76E4 /* Supporting Files */,
+			);
+			path = SpacecraftModeTests;
+			sourceTree = "<group>";
+		};
+		6E61CB9518F330CC00AE76E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E61CB9618F330CC00AE76E4 /* SpacecraftModeTests-Info.plist */,
+				6E61CB9718F330CC00AE76E4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E92330918F51A39000A4AC8 /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				6E92330C18F51A9B000A4AC8 /* AppearSegue.h */,
+				6E92330D18F51A9B000A4AC8 /* AppearSegue.m */,
+			);
+			name = Segues;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E61CB6B18F330CC00AE76E4 /* SpacecraftMode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E61CB9E18F330CC00AE76E4 /* Build configuration list for PBXNativeTarget "SpacecraftMode" */;
+			buildPhases = (
+				6E61CB6818F330CC00AE76E4 /* Sources */,
+				6E61CB6918F330CC00AE76E4 /* Frameworks */,
+				6E61CB6A18F330CC00AE76E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpacecraftMode;
+			productName = SpacecraftMode;
+			productReference = 6E61CB6C18F330CC00AE76E4 /* SpacecraftMode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E61CB8C18F330CC00AE76E4 /* SpacecraftModeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E61CBA118F330CC00AE76E4 /* Build configuration list for PBXNativeTarget "SpacecraftModeTests" */;
+			buildPhases = (
+				6E61CB8918F330CC00AE76E4 /* Sources */,
+				6E61CB8A18F330CC00AE76E4 /* Frameworks */,
+				6E61CB8B18F330CC00AE76E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E61CB9318F330CC00AE76E4 /* PBXTargetDependency */,
+			);
+			name = SpacecraftModeTests;
+			productName = SpacecraftModeTests;
+			productReference = 6E61CB8D18F330CC00AE76E4 /* SpacecraftModeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E61CB6418F330CC00AE76E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Greencraft;
+				TargetAttributes = {
+					6E61CB8C18F330CC00AE76E4 = {
+						TestTargetID = 6E61CB6B18F330CC00AE76E4;
+					};
+				};
+			};
+			buildConfigurationList = 6E61CB6718F330CC00AE76E4 /* Build configuration list for PBXProject "SpacecraftMode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E61CB6318F330CC00AE76E4;
+			productRefGroup = 6E61CB6D18F330CC00AE76E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E61CB6B18F330CC00AE76E4 /* SpacecraftMode */,
+				6E61CB8C18F330CC00AE76E4 /* SpacecraftModeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E61CB6A18F330CC00AE76E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E48FDA318F8E690006D8838 /* MainStoryboard.storyboard in Resources */,
+				6E61CB8818F330CC00AE76E4 /* Images.xcassets in Resources */,
+				6E61CB7A18F330CC00AE76E4 /* InfoPlist.strings in Resources */,
+				6E48FDB318F908CE006D8838 /* EarthStoryboard.storyboard in Resources */,
+				6E61CB8318F330CC00AE76E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E61CB8B18F330CC00AE76E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E61CB9918F330CC00AE76E4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E61CB6818F330CC00AE76E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E48FDB018F8FD09006D8838 /* SpaceSettingsViewController.m in Sources */,
+				6E48FD5A18F8DB4B006D8838 /* SpaceTabBarController.m in Sources */,
+				6E61CB8018F330CC00AE76E4 /* AppDelegate.m in Sources */,
+				6E92330E18F51A9B000A4AC8 /* AppearSegue.m in Sources */,
+				6E48FDAD18F8F8BE006D8838 /* CameraTabViewController.m in Sources */,
+				6E48FDB618F98584006D8838 /* DataComparisonViewController.m in Sources */,
+				6E48FDA918F8F1BD006D8838 /* FlightInfoViewController.m in Sources */,
+				6E48FDA618F8E8AE006D8838 /* StartViewController.m in Sources */,
+				6E61CB7C18F330CC00AE76E4 /* main.m in Sources */,
+				6E48FD5618F8DA78006D8838 /* MenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E61CB8918F330CC00AE76E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E61CB9B18F330CC00AE76E4 /* SpacecraftModeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E61CB9318F330CC00AE76E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E61CB6B18F330CC00AE76E4 /* SpacecraftMode */;
+			targetProxy = 6E61CB9218F330CC00AE76E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E61CB7818F330CC00AE76E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E61CB7918F330CC00AE76E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6E61CB8118F330CC00AE76E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E61CB8218F330CC00AE76E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E61CB9718F330CC00AE76E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E61CB9818F330CC00AE76E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E61CB9C18F330CC00AE76E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E61CB9D18F330CC00AE76E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E61CB9F18F330CC00AE76E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpacecraftMode/SpacecraftMode-Prefix.pch";
+				INFOPLIST_FILE = "SpacecraftMode/SpacecraftMode-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E61CBA018F330CC00AE76E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpacecraftMode/SpacecraftMode-Prefix.pch";
+				INFOPLIST_FILE = "SpacecraftMode/SpacecraftMode-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6E61CBA218F330CC00AE76E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpacecraftMode.app/SpacecraftMode";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpacecraftMode/SpacecraftMode-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpacecraftModeTests/SpacecraftModeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6E61CBA318F330CC00AE76E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpacecraftMode.app/SpacecraftMode";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpacecraftMode/SpacecraftMode-Prefix.pch";
+				INFOPLIST_FILE = "SpacecraftModeTests/SpacecraftModeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E61CB6718F330CC00AE76E4 /* Build configuration list for PBXProject "SpacecraftMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E61CB9C18F330CC00AE76E4 /* Debug */,
+				6E61CB9D18F330CC00AE76E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E61CB9E18F330CC00AE76E4 /* Build configuration list for PBXNativeTarget "SpacecraftMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E61CB9F18F330CC00AE76E4 /* Debug */,
+				6E61CBA018F330CC00AE76E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E61CBA118F330CC00AE76E4 /* Build configuration list for PBXNativeTarget "SpacecraftModeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E61CBA218F330CC00AE76E4 /* Debug */,
+				6E61CBA318F330CC00AE76E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E61CB6418F330CC00AE76E4 /* Project object */;
+}
