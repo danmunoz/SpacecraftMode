@@ -22,7 +22,6 @@
 		6E48FDA918F8F1BD006D8838 /* FlightInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E48FDA818F8F1BD006D8838 /* FlightInfoViewController.m */; };
 		6E48FDAD18F8F8BE006D8838 /* CameraTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E48FDAC18F8F8BE006D8838 /* CameraTabViewController.m */; };
 		6E48FDB018F8FD09006D8838 /* SpaceSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E48FDAF18F8FD09006D8838 /* SpaceSettingsViewController.m */; };
-		6E48FDB318F908CE006D8838 /* EarthStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E48FDB218F908CE006D8838 /* EarthStoryboard.storyboard */; };
 		6E48FDB618F98584006D8838 /* DataComparisonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E48FDB518F98584006D8838 /* DataComparisonViewController.m */; };
 		6E61CB7018F330CC00AE76E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E61CB6F18F330CC00AE76E4 /* Foundation.framework */; };
 		6E61CB7218F330CC00AE76E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E61CB7118F330CC00AE76E4 /* CoreGraphics.framework */; };
@@ -38,6 +37,10 @@
 		6E61CB9918F330CC00AE76E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E61CB9718F330CC00AE76E4 /* InfoPlist.strings */; };
 		6E61CB9B18F330CC00AE76E4 /* SpacecraftModeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E61CB9A18F330CC00AE76E4 /* SpacecraftModeTests.m */; };
 		6E92330E18F51A9B000A4AC8 /* AppearSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E92330D18F51A9B000A4AC8 /* AppearSegue.m */; };
+		6E9BE7E218FAA9E00014531D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9BE7E118FAA9E00014531D /* libc++.dylib */; };
+		6E9BE7E418FAA9E90014531D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9BE7E318FAA9E90014531D /* CoreLocation.framework */; };
+		6E9BE7E618FAA9F80014531D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9BE7E518FAA9F80014531D /* libxml2.dylib */; };
+		6E9BE7E818FAAA0C0014531D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9BE7E718FAAA0C0014531D /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +75,6 @@
 		6E48FDAC18F8F8BE006D8838 /* CameraTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraTabViewController.m; sourceTree = "<group>"; };
 		6E48FDAE18F8FD09006D8838 /* SpaceSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceSettingsViewController.h; sourceTree = "<group>"; };
 		6E48FDAF18F8FD09006D8838 /* SpaceSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceSettingsViewController.m; sourceTree = "<group>"; };
-		6E48FDB218F908CE006D8838 /* EarthStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EarthStoryboard.storyboard; sourceTree = "<group>"; };
 		6E48FDB418F98584006D8838 /* DataComparisonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataComparisonViewController.h; sourceTree = "<group>"; };
 		6E48FDB518F98584006D8838 /* DataComparisonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataComparisonViewController.m; sourceTree = "<group>"; };
 		6E61CB6C18F330CC00AE76E4 /* SpacecraftMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacecraftMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,10 @@
 		6E61CB9A18F330CC00AE76E4 /* SpacecraftModeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpacecraftModeTests.m; sourceTree = "<group>"; };
 		6E92330C18F51A9B000A4AC8 /* AppearSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearSegue.h; sourceTree = "<group>"; };
 		6E92330D18F51A9B000A4AC8 /* AppearSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearSegue.m; sourceTree = "<group>"; };
+		6E9BE7E118FAA9E00014531D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		6E9BE7E318FAA9E90014531D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6E9BE7E518FAA9F80014531D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		6E9BE7E718FAAA0C0014531D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E9BE7E818FAAA0C0014531D /* libsqlite3.dylib in Frameworks */,
+				6E9BE7E618FAA9F80014531D /* libxml2.dylib in Frameworks */,
+				6E16F2D518F3A55D00EADED3 /* libz.dylib in Frameworks */,
+				6E9BE7E418FAA9E90014531D /* CoreLocation.framework in Frameworks */,
+				6E9BE7E218FAA9E00014531D /* libc++.dylib in Frameworks */,
 				6E16F2DD18F3A57A00EADED3 /* MessageUI.framework in Frameworks */,
 				6E16F2DB18F3A57200EADED3 /* CFNetwork.framework in Frameworks */,
 				6E16F2D918F3A56C00EADED3 /* CoreMotion.framework in Frameworks */,
 				6E16F2D718F3A56400EADED3 /* CoreBluetooth.framework in Frameworks */,
-				6E16F2D518F3A55D00EADED3 /* libz.dylib in Frameworks */,
 				6E16F2D318F3A54700EADED3 /* ExternalAccessory.framework in Frameworks */,
 				6E61CB7218F330CC00AE76E4 /* CoreGraphics.framework in Frameworks */,
 				6E16F2D118F3A46A00EADED3 /* PebbleVendor.framework in Frameworks */,
@@ -166,7 +176,6 @@
 		6E48FDB118F9017C006D8838 /* Earth */ = {
 			isa = PBXGroup;
 			children = (
-				6E48FDB218F908CE006D8838 /* EarthStoryboard.storyboard */,
 				6E48FDB418F98584006D8838 /* DataComparisonViewController.h */,
 				6E48FDB518F98584006D8838 /* DataComparisonViewController.m */,
 			);
@@ -197,6 +206,10 @@
 		6E61CB6E18F330CC00AE76E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6E9BE7E718FAAA0C0014531D /* libsqlite3.dylib */,
+				6E9BE7E518FAA9F80014531D /* libxml2.dylib */,
+				6E9BE7E318FAA9E90014531D /* CoreLocation.framework */,
+				6E9BE7E118FAA9E00014531D /* libc++.dylib */,
 				6E16F2DC18F3A57A00EADED3 /* MessageUI.framework */,
 				6E16F2DA18F3A57200EADED3 /* CFNetwork.framework */,
 				6E16F2D818F3A56C00EADED3 /* CoreMotion.framework */,
@@ -344,7 +357,6 @@
 				6E48FDA318F8E690006D8838 /* MainStoryboard.storyboard in Resources */,
 				6E61CB8818F330CC00AE76E4 /* Images.xcassets in Resources */,
 				6E61CB7A18F330CC00AE76E4 /* InfoPlist.strings in Resources */,
-				6E48FDB318F908CE006D8838 /* EarthStoryboard.storyboard in Resources */,
 				6E61CB8318F330CC00AE76E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +516,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpacecraftMode/SpacecraftMode-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "SpacecraftMode/SpacecraftMode-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,6 +538,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpacecraftMode/SpacecraftMode-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "SpacecraftMode/SpacecraftMode-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
