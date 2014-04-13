@@ -12,9 +12,27 @@ typedef enum{
     RotationDirectionCounterClockwise = 1
 }RotationDirection;
 
+typedef enum{
+    SMAnimationStateWeight = 0,
+    SMAnimationStateSpeed = 1,
+    SMAnimationStateAltitude = 2,
+    SMAnimationStateTemperature = 3,
+}SMAnimationState;
+
 @interface DataComparisonViewController ()
 @property (weak, nonatomic) IBOutlet UIView *earthView;
 @property (nonatomic, strong) NSNumber *currentEarthValue;
+@property (weak, nonatomic) IBOutlet UIImageView *skinnyRocketImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *speedRocketImageView;
+@property (nonatomic) SMAnimationState animationState;
+@property (weak, nonatomic) IBOutlet UIImageView *slowCarImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *fatGuyImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *coldTempImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *hotGuyImageView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+
+
 @end
 
 @implementation DataComparisonViewController
@@ -32,7 +50,7 @@ typedef enum{
 {
     [super viewDidLoad];
     self.currentEarthValue = [NSNumber numberWithInt:0];
-    // Do any additional setup after loading the view.
+    self.animationState = SMAnimationStateWeight;
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,22 +88,81 @@ typedef enum{
     self.earthView.layer.transform = CATransform3DMakeRotation(90.0 / 180.0 * M_PI, 0.0, 0.0, 1.0);
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)showImagesForCurrentAnimation{
+    switch (self.animationState) {
+        case SMAnimationStateWeight:
+        {
+            [self.slowCarImageView setHidden:YES];
+            [self.speedRocketImageView setHidden:YES];
+            [self.coldTempImageView setHidden:YES];
+            [self.hotGuyImageView setHidden:YES];
+            [self.fatGuyImageView setHidden:NO];
+            [self.skinnyRocketImageView setHidden:NO];
+            [self.titleLabel setText:@"WEIGHT"];
+            [self.descriptionLabel setText:@"8x lighter than you!"];
+        }
+            break;
+        case SMAnimationStateSpeed:
+            //TODO: remove images for altitude
+            [self.fatGuyImageView setHidden:YES];
+            [self.skinnyRocketImageView setHidden:YES];
+            [self.slowCarImageView setHidden:NO];
+            [self.speedRocketImageView setHidden:NO];
+            [self.titleLabel setText:@"SPEED"];
+            [self.descriptionLabel setText:@"28x faster than you!"];
+            break;
+        case SMAnimationStateAltitude:
+            [self.coldTempImageView setHidden:YES];
+            [self.hotGuyImageView setHidden:YES];
+            [self.slowCarImageView setHidden:YES];
+            [self.speedRocketImageView setHidden:YES];
+            //set proper images!!
+            [self.fatGuyImageView setHidden:NO];
+            [self.skinnyRocketImageView setHidden:NO];
+            [self.titleLabel setText:@"ALTITUDE"];
+            [self.descriptionLabel setText:@"396.716 m above you!"];
+            break;
+        case SMAnimationStateTemperature:
+            [self.fatGuyImageView setHidden:YES];
+            [self.skinnyRocketImageView setHidden:YES];
+            [self.coldTempImageView setHidden:NO];
+            [self.hotGuyImageView setHidden:NO];
+            [self.titleLabel setText:@"TEMPERATURE"];
+            [self.descriptionLabel setText:@"4x colder than you!"];
+            //TODO: remove images for altitude
+            break;
+        default:
+            break;
+    }
 }
-*/
 
 - (IBAction)advanceRight:(id)sender {
     [self rotateEarthToDirection:RotationDirectionClockwise];
+    [self incrementAnimationCount];
+    [self showImagesForCurrentAnimation];
 }
 
 - (IBAction)advanceLeft:(id)sender {
     [self rotateEarthToDirection:RotationDirectionCounterClockwise];
+    [self decrementAnimationCount];
+    [self showImagesForCurrentAnimation];
+}
+
+- (void)incrementAnimationCount{
+    if (self.animationState == SMAnimationStateTemperature) {
+        self.animationState = SMAnimationStateWeight;
+    }
+    else{
+        self.animationState ++;
+    }
+}
+
+- (void)decrementAnimationCount{
+    if (self.animationState == SMAnimationStateWeight) {
+        self.animationState = SMAnimationStateTemperature;
+    }
+    else{
+        self.animationState --;
+    }
 }
 @end

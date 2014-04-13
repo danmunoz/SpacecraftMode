@@ -30,23 +30,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"did load");
     [self setUpParallax];
     [self.spaceLabel setAlpha:0.0];
+//    [self.earthButton setAlpha:0.0f];
     [self animateButtons];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-    
 }
 
-- (void)viewDidAppear:(BOOL)animated{
-//    [self animateButtons];
+
+- (void)viewDidLayoutSubviews{
+//    [self.earthButton setFrame:CGRectMake(0, 1000, 320, 177)];
 }
 
 - (void)animateButtons{
-    [self.issButton setFrame:CGRectMake(+100, -200, 281, 99)];
+    [self.issButton setFrame:CGRectMake(100, -200, 281, 99)];
+//    [self.earthButton setFrame:CGRectMake(0, 1000, 320, 177)];
+    
+    
     [self.issButton setAlpha:1.0f];
+    
     float animationTime = 0.5f;
     CGPoint fromPoint = self.issButton.layer.position;
     CGPoint toPoint;
@@ -65,6 +69,28 @@
     animationGroup.fillMode = kCAFillModeForwards;
     animationGroup.removedOnCompletion = NO;
     [self.issButton.layer addAnimation:animationGroup forKey:@"anim"];
+    
+    
+    
+//    CGPoint fromPoint2 = self.earthButton.layer.position;
+//    CGPoint toPoint2 = CGPointMake(160, 500);
+//    self.earthButton.frame = CGRectMake(self.earthButton.layer.position.x, self.earthButton.layer.position.x, self.earthButton.frame.size.width, self.earthButton.frame.size.height);
+//    self.earthButton.layer.position = toPoint2;
+//    CABasicAnimation * moveEarthUpAnimation = [CABasicAnimation animationWithKeyPath:@"position"];
+//    moveEarthUpAnimation.fromValue = [NSValue valueWithCGPoint:fromPoint2];
+//    moveEarthUpAnimation.toValue = [NSValue valueWithCGPoint:toPoint2];
+//    moveEarthUpAnimation.duration = animationTime;
+//    moveEarthUpAnimation.fillMode = kCAFillModeForwards;
+//    moveEarthUpAnimation.removedOnCompletion = NO;
+//    CAAnimationGroup *animationGroup2 = [CAAnimationGroup animation];
+//    animationGroup2.animations = [NSArray arrayWithObjects:moveEarthUpAnimation, nil];
+//    animationGroup2.duration = animationTime;
+//    animationGroup2.fillMode = kCAFillModeForwards;
+//    animationGroup2.removedOnCompletion = NO;
+//    [self.earthButton setAlpha:1.0f];
+//    [self.earthButton.layer addAnimation:animationGroup2 forKey:@"anim"];
+    
+    
     
     [UIView animateWithDuration:0.6f animations:^{
         [self.spaceLabel setAlpha:1.0];
