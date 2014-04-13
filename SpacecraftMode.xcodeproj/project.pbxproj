@@ -42,6 +42,10 @@
 		6E9BE7E618FAA9F80014531D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9BE7E518FAA9F80014531D /* libxml2.dylib */; };
 		6E9BE7E818FAAA0C0014531D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9BE7E718FAAA0C0014531D /* libsqlite3.dylib */; };
 		6EE3CEAE18FABA50006D0D3E /* EarthStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3CEAD18FABA50006D0D3E /* EarthStoryboard.storyboard */; };
+		6EE3CEB118FAC92B006D0D3E /* EarthSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3CEB018FAC92B006D0D3E /* EarthSettingsViewController.m */; };
+		6EE3CEB518FAD03F006D0D3E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3CEB418FAD03F006D0D3E /* Reachability.m */; };
+		6EE3CEB818FADB68006D0D3E /* WayDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3CEB718FADB68006D0D3E /* WayDownViewController.m */; };
+		6EE3CEBC18FAFC61006D0D3E /* space-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3CEBB18FAFC61006D0D3E /* space-1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +106,13 @@
 		6E9BE7E518FAA9F80014531D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		6E9BE7E718FAAA0C0014531D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		6EE3CEAD18FABA50006D0D3E /* EarthStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EarthStoryboard.storyboard; sourceTree = "<group>"; };
+		6EE3CEAF18FAC92B006D0D3E /* EarthSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthSettingsViewController.h; sourceTree = "<group>"; };
+		6EE3CEB018FAC92B006D0D3E /* EarthSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthSettingsViewController.m; sourceTree = "<group>"; };
+		6EE3CEB318FAD03F006D0D3E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		6EE3CEB418FAD03F006D0D3E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		6EE3CEB618FADB68006D0D3E /* WayDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WayDownViewController.h; sourceTree = "<group>"; };
+		6EE3CEB718FADB68006D0D3E /* WayDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WayDownViewController.m; sourceTree = "<group>"; };
+		6EE3CEBB18FAFC61006D0D3E /* space-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "space-1.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,14 +120,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E16F2D918F3A56C00EADED3 /* CoreMotion.framework in Frameworks */,
+				6E9BE7E418FAA9E90014531D /* CoreLocation.framework in Frameworks */,
 				6E9BE7E818FAAA0C0014531D /* libsqlite3.dylib in Frameworks */,
 				6E9BE7E618FAA9F80014531D /* libxml2.dylib in Frameworks */,
 				6E16F2D518F3A55D00EADED3 /* libz.dylib in Frameworks */,
-				6E9BE7E418FAA9E90014531D /* CoreLocation.framework in Frameworks */,
 				6E9BE7E218FAA9E00014531D /* libc++.dylib in Frameworks */,
 				6E16F2DD18F3A57A00EADED3 /* MessageUI.framework in Frameworks */,
 				6E16F2DB18F3A57200EADED3 /* CFNetwork.framework in Frameworks */,
-				6E16F2D918F3A56C00EADED3 /* CoreMotion.framework in Frameworks */,
 				6E16F2D718F3A56400EADED3 /* CoreBluetooth.framework in Frameworks */,
 				6E16F2D318F3A54700EADED3 /* ExternalAccessory.framework in Frameworks */,
 				6E61CB7218F330CC00AE76E4 /* CoreGraphics.framework in Frameworks */,
@@ -143,6 +154,7 @@
 		6E48FD5718F8DB23006D8838 /* Space */ = {
 			isa = PBXGroup;
 			children = (
+				6EE3CEBB18FAFC61006D0D3E /* space-1.jpg */,
 				6E61CB8118F330CC00AE76E4 /* Main.storyboard */,
 				6E48FD5818F8DB4B006D8838 /* SpaceTabBarController.h */,
 				6E48FD5918F8DB4B006D8838 /* SpaceTabBarController.m */,
@@ -150,6 +162,8 @@
 				6E48FDA818F8F1BD006D8838 /* FlightInfoViewController.m */,
 				6E48FDAE18F8FD09006D8838 /* SpaceSettingsViewController.h */,
 				6E48FDAF18F8FD09006D8838 /* SpaceSettingsViewController.m */,
+				6EE3CEB618FADB68006D0D3E /* WayDownViewController.h */,
+				6EE3CEB718FADB68006D0D3E /* WayDownViewController.m */,
 			);
 			name = Space;
 			sourceTree = "<group>";
@@ -181,6 +195,8 @@
 				6EE3CEAD18FABA50006D0D3E /* EarthStoryboard.storyboard */,
 				6E48FDB418F98584006D8838 /* DataComparisonViewController.h */,
 				6E48FDB518F98584006D8838 /* DataComparisonViewController.m */,
+				6EE3CEAF18FAC92B006D0D3E /* EarthSettingsViewController.h */,
+				6EE3CEB018FAC92B006D0D3E /* EarthSettingsViewController.m */,
 			);
 			name = Earth;
 			sourceTree = "<group>";
@@ -230,6 +246,7 @@
 		6E61CB7518F330CC00AE76E4 /* SpacecraftMode */ = {
 			isa = PBXGroup;
 			children = (
+				6EE3CEB218FAD02C006D0D3E /* Reachability */,
 				6E48FDAA18F8F8B0006D8838 /* Camera */,
 				6E48FD5B18F8E067006D8838 /* Start */,
 				6E48FD5718F8DB23006D8838 /* Space */,
@@ -279,6 +296,15 @@
 				6E92330D18F51A9B000A4AC8 /* AppearSegue.m */,
 			);
 			name = Segues;
+			sourceTree = "<group>";
+		};
+		6EE3CEB218FAD02C006D0D3E /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				6EE3CEB318FAD03F006D0D3E /* Reachability.h */,
+				6EE3CEB418FAD03F006D0D3E /* Reachability.m */,
+			);
+			name = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EE3CEBC18FAFC61006D0D3E /* space-1.jpg in Resources */,
 				6E48FDA318F8E690006D8838 /* MainStoryboard.storyboard in Resources */,
 				6E61CB8818F330CC00AE76E4 /* Images.xcassets in Resources */,
 				6E61CB7A18F330CC00AE76E4 /* InfoPlist.strings in Resources */,
@@ -380,15 +407,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EE3CEB118FAC92B006D0D3E /* EarthSettingsViewController.m in Sources */,
 				6E48FDB018F8FD09006D8838 /* SpaceSettingsViewController.m in Sources */,
 				6E48FD5A18F8DB4B006D8838 /* SpaceTabBarController.m in Sources */,
 				6E61CB8018F330CC00AE76E4 /* AppDelegate.m in Sources */,
 				6E92330E18F51A9B000A4AC8 /* AppearSegue.m in Sources */,
+				6EE3CEB818FADB68006D0D3E /* WayDownViewController.m in Sources */,
 				6E48FDAD18F8F8BE006D8838 /* CameraTabViewController.m in Sources */,
 				6E48FDB618F98584006D8838 /* DataComparisonViewController.m in Sources */,
 				6E48FDA918F8F1BD006D8838 /* FlightInfoViewController.m in Sources */,
 				6E48FDA618F8E8AE006D8838 /* StartViewController.m in Sources */,
 				6E61CB7C18F330CC00AE76E4 /* main.m in Sources */,
+				6EE3CEB518FAD03F006D0D3E /* Reachability.m in Sources */,
 				6E48FD5618F8DA78006D8838 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
