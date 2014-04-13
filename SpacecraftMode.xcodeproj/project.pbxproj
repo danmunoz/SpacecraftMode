@@ -41,6 +41,7 @@
 		6E9BE7E418FAA9E90014531D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9BE7E318FAA9E90014531D /* CoreLocation.framework */; };
 		6E9BE7E618FAA9F80014531D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9BE7E518FAA9F80014531D /* libxml2.dylib */; };
 		6E9BE7E818FAAA0C0014531D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9BE7E718FAAA0C0014531D /* libsqlite3.dylib */; };
+		6EE3CEAE18FABA50006D0D3E /* EarthStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3CEAD18FABA50006D0D3E /* EarthStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		6E9BE7E318FAA9E90014531D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6E9BE7E518FAA9F80014531D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		6E9BE7E718FAAA0C0014531D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6EE3CEAD18FABA50006D0D3E /* EarthStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EarthStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 		6E48FDB118F9017C006D8838 /* Earth */ = {
 			isa = PBXGroup;
 			children = (
+				6EE3CEAD18FABA50006D0D3E /* EarthStoryboard.storyboard */,
 				6E48FDB418F98584006D8838 /* DataComparisonViewController.h */,
 				6E48FDB518F98584006D8838 /* DataComparisonViewController.m */,
 			);
@@ -357,6 +360,7 @@
 				6E48FDA318F8E690006D8838 /* MainStoryboard.storyboard in Resources */,
 				6E61CB8818F330CC00AE76E4 /* Images.xcassets in Resources */,
 				6E61CB7A18F330CC00AE76E4 /* InfoPlist.strings in Resources */,
+				6EE3CEAE18FABA50006D0D3E /* EarthStoryboard.storyboard in Resources */,
 				6E61CB8318F330CC00AE76E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
